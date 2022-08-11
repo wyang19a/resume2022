@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <title>Wootae Resume</title>
+    <style>
+      @font-face {
+        font-family: "name-font";
+        src: url("./palab.ttf");
+      }
+      html {
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 650px !important;
+        height: 842px !important;
+        /* border: 1px solid black; */
+        text-align: justify;
+      }
+      div.container {
+        display: flex;
+        flex-direction: column;
+        /*margin: 40px 40px;*/
+      }
+      div.name {
+        font-family: "name-font", "Merriweather", serif;
+        font-size: 19pt;
+        text-align: center;
+        padding: 10px 0;
+      }
+      span.name-cap {
+        font-size: 24pt;
+      }
+      div.contact-info {
+        display: flex;
+        font-weight: 700;
+        font-size: 0.57rem;
+        justify-content: space-around;
+      }
+      hr {
+        width: 100%;
+        border: 1px solid #3283a8;
+        margin: 1px auto;
+      }
+      div.job-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 12px;
+      }
+      div.sub-job-titles {
+        display: flex;
+        justify-content: space-around;
+      }
+      div.header-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.65rem;
+        font-weight: 700;
+        line-height: 15px;
+      }
+      span.header-cap {
+        font-size: 0.75rem;
+      }
+
+      .header {
+        padding-top: 5px;
+      }
+      .cap {
+        font-size: 0.9rem !important;
+      }
+      .main-title {
+        font-size: 0.8rem;
+      }
+      span.cap {
+        font-size: 0.7rem;
+      }
+      div.title-description {
+        font-size: 0.65rem;
+        /* line-height: 1em; */
+      }
+      .skill-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .skill-item {
+        font-weight: 600;
+        padding: 0 1em;
+        font-size: 0.65rem;
+      }
+      .current {
+        font-weight: 700 !important;
+      }
+      div.exp-container,
+      div.project-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.7rem;
+      }
+      div.exp-title-row {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 0.65rem;
+      }
+      div.prj-title-row {
+        font-weight: 600;
+        font-size: 0.65rem;
+      }
+      span.exp-title,
+      span.prj-title,
+      span.education-title {
+        color: #325da8;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 0.7rem;
+      }
+      ul {
+        margin: 0;
+        padding-left: 15px;
+        font-size: 0.65rem;
+      }
+      div.education-container {
+        font-size: 0.6rem;
+        text-align: center;
+      }
+      div.education-item {
+        font-weight: 600;
+      }
+      span.cert-credential {
+        font-weight: 500;
+        font-style: italic;
+      }
+      .skill-container-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .skill-item-2 {
+        font-weight: 600;
+        font-size: 0.55rem;
+        text-align: center;
+      }
+      .tiny {
+        font-size: 0.55rem;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="name">
+          <span class="name-cap">W</span>OOTAE <span class="name-cap">A</span>.
+          <span class="name-cap">Y</span>ANG, <span class="title">MCSE</span>
+        </div>
+        <div class="contact-info">
+          <div class="address">
+            <i class="fas fa-map-marker-alt"></i> Boston, MA
+          </div>
+          <div class="phone"><i class="fas fa-mobile"></i> 617-990-6178</div>
+          <div class="email">
+            <i class="fab fa-salesforce"></i>
+            https://trailblazer.me/id/wootae-yang
+          </div>
+          <div class="linkedin">
+            <i class="fab fa-linkedin"></i>
+            https://www.linkedin.com/in/wootae-yang
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row titles">
+        <!-- <div class="job-title main-title current">
+          <span class="cap">S</span>alesforce <span class="cap">D</span>eveloper
+        </div> -->
+        <div class="sub-job-titles">
+          <div class="job-title main-title">
+            <span class="cap">S</span>alesforce
+            <span class="cap">D</span>eveloper
+          </div>
+          <svg viewBox="0 0 80 100" width="10px" version="1.1">
+            <polygon
+              points="0,50, 40,0 80,50 40,100"
+              fill="#3283a8"
+              stroke="#3283a8"
+              strokeWidth="1"
+            />
+          </svg>
+          <div class="job-title main-title">
+            <span class="cap">J</span>ava<span class="cap">S</span>cript<span
+              class="cap"
+            >
+              D</span
+            >eveloper
+          </div>
+          <svg viewBox="0 0 80 100" width="10px" version="1.1">
+            <polygon
+              points="0,50, 40,0 80,50 40,100"
+              fill="#3283a8"
+              stroke="#3283a8"
+              strokeWidth="1"
+            />
+          </svg>
+          <div class="job-title main-title">
+            <span class="cap">Sql</span> <span class="cap">D</span>eveloper
+          </div>
+        </div>
+        <!-- <div class="title-description">
+                Driven Software Engineer and Database Engineer equipped with an aptitude and passion for innovation and resourceful
+                problem-solving. Proficient in creating new features and functionality and integrating
+                components for timely and efficient solutions. Strong attention to detail with exceptional
+                written and verbal communication skills, prioritizing, and organizing workload under strict time
+                constraints. Continuous learner who seamlessly adapts to new
+                software development and emerging technologies.
+            </div> -->
+      </div>
+      <div class="header-title header">
+        <span class="header-cap">T</span>echnical
+        <span class="header-cap">S</span>kills
+      </div>
+      <hr />
+      <div class="row">
+        <div class="skill-container-2">
+          <div>
+            <div class="skill-item-2 skill-item-header">Salesforce</div>
+            <div class="skill-item-2">Salesforce Administration</div>
+            <div class="skill-item-2">Apex/Triggers</div>
+            <div class="skill-item-2">SOQL/SOSL</div>
+            <div class="skill-item-2">Visualforce Pages</div>
+            <div class="skill-item-2">Aura Components</div>
+            <div class="skill-item-2">Lightning Web Components</div>
+          </div>
+          <div>
+            <div class="skill-item-2 skill-item-header">JavaScript</div>
+            <div class="skill-item-2">ES6</div>
+            <div class="skill-item-2">jQuery</div>
+            <div class="skill-item-2">React.js</div>
+            <div class="skill-item-2">Node.js</div>
+            <div class="skill-item-2">CSS/Sass</div>
+            <div class="skill-item-2">Bootstrap/Flexbox/Grid</div>
+          </div>
+          <div>
+            <div class="skill-item-2 skill-item-header">SQL Server</div>
+            <div class="skill-item-2">SQL Server DBA</div>
+            <div class="skill-item-2">Transact-SQL</div>
+            <div class="skill-item-2">.NET Webforms</div>
+            <div class="skill-item-2">C#</div>
+            <div class="skill-item-2">SSIS</div>
+            <div class="skill-item-2">Data Warehouse</div>
+          </div>
+          <!-- <div>
+                    <div class="skill-item-2 skill-item-header">GitHub</div>
+                    <div class="skill-item-2">HTML/CSS/Sass</div>
+                    <div class="skill-item-2">Bootstrap</div>
+                    <div class="skill-item-2">Handlebars</div>
+                    <div class="skill-item-2">Framer-motion</div>
+                    <div class="skill-item-2">RESTful API</div>
+                    <div class="skill-item-2">Scrum</div>
+                </div> -->
+        </div>
+        <!-- <div class="skill-container">
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Salesforce</div>
+                <div class="skill-item">Apex</div>
+                <div class="skill-item">SOQL/SOSL</div>
+                <div class="skill-item">Visualforce Pages</div>
+                <div class="skill-item">Aura Components</div>
+                <div class="skill-item">Lightning Web Components</div>
+                <div class="skill-item">jQuery</div> 
+                <div class="skill-item">React.js</div>
+                <div class="skill-item">Framer-motion</div>
+                <div class="skill-item">C#</div>
+                <div class="skill-item">SQL Server</div>
+                <div class="skill-item">T-SQL</div>
+                <div class="skill-item">.NET</div>
+                <div class="skill-item">SSIS</div>
+                <div class="skill-item">Data Warehouse</div>
+                <div class="skill-item">Ruby on Rails</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">HTML/CSS/Sass</div>
+                <div class="skill-item">RESTful API</div>
+                <div class="skill-item">Bootstrap</div>
+                <div class="skill-item">Handlebars</div>
+                <div class="skill-item">GitHub</div>
+                <div class="skill-item">SCRUM</div>
+            </div> -->
+      </div>
+      <div class="header-title header">
+        <span class="header-cap">P</span>rofessional
+        <span class="header-cap">E</span>xperience
+      </div>
+      <hr />
+      <div class="row">
+        <div class="exp-container">
+          <div class="single-exp">
+            <div class="exp-title-row">
+              <div class="etr-left">
+                <span class="exp-title">Associate Consultant </span>
+                | Wipro | Boston MA <span class="tiny">(Remote)</span>
+              </div>
+              <div class="ert-right">2021 - Current</div>
+            </div>
+          </div>
+          <div class="single-exp">
+            <div class="exp-title-row">
+              <div class="etr-left">
+                <span class="exp-title">Associate Software Engineer </span>
+                | Revature | Boston MA <span class="tiny">(Remote)</span>
+              </div>
+              <div class="ert-right">2021 - Current</div>
+            </div>
+            <div class="exp-achieve">
+              <ul>
+                <li>
+                  Successfully guided colleague associates throughout 3 project
+                  development processes as a team leader using declarative tools
+                  to implement business requirements and extend functionalities
+                  using Apex, Visualforce Pages, and Lightning Components.
+                </li>
+                <li>Selected as MVP in recognition of performance.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="single-exp">
+            <div class="exp-title-row">
+              <div class="etr-left">
+                <span class="exp-title">Software Engineer </span>
+                | Phoenix Business Computing | Hooksett NH
+              </div>
+              <div class="ert-right">April 2020 - October 2020</div>
+            </div>
+            <div class="exp-achieve">
+              <ul>
+                <li>
+                  Executed full stack .NET solution development using C#, SQL
+                  Server, JavaScript, jQuery, CSS, and SSIS.
+                </li>
+                <li>
+                  Designed and developed of SQL Server 2012/2016 tables, stored
+                  procedures, views, and indexes.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="single-exp">
+            <div class="exp-title-row">
+              <div class="etr-left">
+                <span class="exp-title">Certified Pharmacy Technician </span>
+                | AAMC Pharmacy | Boston MA
+              </div>
+              <div class="ert-right">2016 - 2019</div>
+            </div>
+            <div class="exp-achieve">
+              <ul>
+                <li>
+                  Proposed a workflow design that greatly reduced prescription
+                  dispensing error and improved quality control.
+                </li>
+                <li>
+                  Delivered prompt service and screened, compounded
+                  prescriptions.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-title header">
+        <span class="header-cap">P</span>rojects
+      </div>
+      <hr />
+      <div class="row">
+        <div class="project-container">
+          <div class="single-project-container">
+            <div class="prj-title-row">
+              <span class="prj-title">Trial of the Titans</span> | Revature
+              |<span class="tiny"> Project Lead </span>
+            </div>
+            <ul>
+              <li>
+                Led a team responsible for development of Aura components that
+                allow users to take the assessments prepared by other users, and
+                view the assessment result history and details with statistics
+                and data visualization.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="single-project-container">
+            <div class="prj-title-row">
+              <span class="prj-title">Seven Stones </span> | Revature |<span
+                class="tiny"
+              >
+                Project Lead
+              </span>
+            </div>
+            <ul>
+              <li>
+                Migrated existing Visualforce pages to an Aura components.
+              </li>
+              <li>
+                Improved solution by implementing Sales Cloud, Service Cloud,
+                and Experience Cloud.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="single-project-container">
+            <div class="prj-title-row">
+              <span class="prj-title">Smart Audit Master 4 (SAM4) </span>
+              | Phoenix Business Computing
+            </div>
+            <ul>
+              <li>
+                Implemented version control, provided training, greatly
+                improving team’s co-working conditions.
+              </li>
+              <li>
+                Developed and implemented 7 sub-modules for handling
+                administrative tasks in the solution.
+              </li>
+              <li>
+                Designed and implemented SQL Server 2012/2016 and SSIS packages.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="single-project-container">
+            <div class="prj-title-row">
+              <span class="prj-title">Task Scheduler </span>
+              | General Assembly
+            </div>
+            <ul>
+              <li>
+                Built full stack React.js SPA allowing users to sign up, sign
+                in, and perform CRUD operations on personal daily planner.
+                Backend is built using Ruby on Rails and PostgreSQL hosted on
+                heroku.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="single-project-container">
+            <div class="prj-title-row">
+              <span class="prj-title">Survey Application </span> | General
+              Assembly |<span class="tiny"> Front-End Lead </span>
+            </div>
+            <ul>
+              <li>
+                Led the front-end development, creating a responsive, secure web
+                application using JavaScript, jQuery, Bootstrap, with
+                Handlebars.js for templating Chart.js for simple visualization.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-title header">
+        <span class="header-cap">E</span>ducation /
+        <span class="header-cap">C</span>ertifications
+      </div>
+      <hr />
+      <div class="row">
+        <div class="education-container">
+          <div class="education-item">
+            <span class="education-title"
+              >Financial Services Cloud Accredited Professional </span
+            >| Salesforce <span class="cert-credential"></span>
+          </div>
+          <div class="education-item">
+            <span class="education-title"
+              >Salesforce Certififed JavaScript Developer I </span
+            >| Salesforce | <span class="cert-credential">22486355</span>
+          </div>
+          <div class="education-item">
+            <span class="education-title"
+              >Salesforce Certififed Platform Developer I </span
+            >| Salesforce | <span class="cert-credential">22300743</span>
+          </div>
+          <div class="education-item">
+            <span class="education-title"
+              >Salesforce Certified Administrator </span
+            >| Salesforce | <span class="cert-credential">22228008</span>
+          </div>
+          <div class="education-item">
+            <span class="education-title"
+              >MCSE - Data Management and Analytics </span
+            >| Microsoft | <span class="cert-credential">H651-5713</span>
+          </div>
+          <div class="education-item">
+            <span class="education-title">MCSA - SQL Database Development </span
+            >| Microsoft | <span class="cert-credential">H486-8918</span>
+          </div>
+          <div class="education-item">
+            <span class="education-title">Software Engineering Immersive </span
+            >| General Assembly | 2019 - 2020
+          </div>
+          <div class="education-item">
+            <span class="education-title"
+              >Bachelor of Science in Pharmaceutical Sciences </span
+            >| MCPHS University | 2010 - 2016 | Boston, MA
+          </div>
+        </div>
+      </div>
+      <div class="header-title header">
+        <span class="header-cap">T</span>railhead
+        <span class="header-cap">S</span>uperbadges
+      </div>
+      <hr />
+
+      <div class="education-container">
+        <div class="education-item">
+          <span class="education-title"
+            >Financial Services Cloud Specialist
+          </span>
+        </div>
+        <div class="education-item">
+          <span class="education-title"
+            >Lightning Web Components Specialist
+          </span>
+        </div>
+        <div class="education-item">
+          <span class="education-title">Aura Components Specialist </span>
+        </div>
+        <div class="education-item">
+          <span class="education-title">Apex Specialist </span>
+        </div>
+        <div class="education-item">
+          <span class="education-title">Security Specialist </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
